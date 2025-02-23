@@ -1,0 +1,327 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    /* position: sticky;
+    top: 0px; */
+    justify-content:space-between;
+    font-size:small;
+}
+
+header p{
+    font-size: 21px;
+}
+
+.pfp{
+    border-radius: 20px;
+    position: relative;
+    width: 250px;
+    left:80px;
+    bottom:120px
+}
+
+.nav-links p:hover{
+    color:rgb(138, 48, 223);
+    cursor: pointer;
+}
+
+button:hover{
+    width: 100px;
+
+}
+
+/* button::after{
+    
+    visibility: hidden;
+} */
+
+button:hover::after{
+    content:"lo";
+    /* visibility: visible; */
+}
+
+.socials{
+    font-size: 40px;
+    display: flex;
+    width: 150px;
+    position: relative;
+    left:200px;
+    justify-content: space-between;
+    top: 20px;
+   
+}
+
+.socials a{
+    
+    color: rgb(138, 48, 223);
+    margin: 5px;
+    transition: all 1s ease-in-out;
+    
+}
+
+.socials-circle{
+    margin: 5px;;
+    border: solid  rgb(138, 48, 223);
+    height: 50px;
+    /* width: 50px; */
+    border-radius: 100px;
+    transition: all 1s ease-in-out;
+}
+
+.socials-circle:hover{
+    background-color: rgb(138, 48, 223);
+}
+
+a{
+    text-decoration: none;
+}
+
+.socials-circle:hover a{
+    color: aliceblue;
+}
+
+.linkedin-button:hover::after{
+    content:"nkedIn";
+    font-size: 40px; 
+    color: aliceblue;
+}
+
+
+.github-button:hover::after{
+    content:"Hub";
+    font-size: 40px; 
+    color: aliceblue;
+}
+
+.instagram-button:hover::after{
+    content:"stagram";
+    font-size: 40px; 
+    color: aliceblue;
+}
+
+
+.arrow-circle{
+     position: relative;
+    left: 670px;
+    border: solid;
+    width: 90px;
+    border-radius: 50px;
+    animation: startup 2s ease-in-out;
+}
+
+.bouncing-arrow {
+    font-size: 80px;
+    animation: bounce 1s infinite alternate ease-in-out;
+   /* width: 90px; */
+   margin-left: 15px;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+@keyframes startup {
+    from{
+        transform: translate(-350px, 200px);
+    }
+
+    
+}
+/* 
+*{
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 3s forwards; 
+} */
+
+/* Keyframes to gradually fade in all elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.dropdown-demo{
+    display: grid;
+    grid-template-columns: auto;
+    border: solid;
+    top: 55px;
+    width: 150px;
+    border-radius: 20px;
+    left: 1130px;
+    z-index: 1;
+    background-color: aliceblue;
+    display: none;
+
+}
+.dropdown-talk{
+    display: grid;
+    grid-template-columns: auto;
+    border: solid;
+    top: 55px;
+    width: 220px;
+    border-radius: 20px;
+    left: 1300px;
+    z-index: 1;
+    background-color: aliceblue;
+    display: none;
+
+}
+
+.dropdown-demo a{
+    margin: 20px;
+}
+
+.demos:hover + .dropdown-demo,.dropdown-demo:hover{
+    display:grid;
+}
+.talk:hover + .dropdown-talk,.dropdown-talk:hover{
+    display:grid;
+}
+
+.skills{
+    margin-left: 70px;
+    display:flex ;
+    height: 600px;
+}
+
+.skills li{
+    color: #e8e8e8;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.pskill{
+    /* border: solid; */
+    width: 340px;
+    height: 500px;
+    position: relative;
+    left: 500px;
+    top: 100px;
+    border-radius: 20px;
+    background-color: #7000FF;
+    display: none;
+}
+
+.pskill i, .fskill i, .dskill i{
+    font-size: 40px;
+    margin-left: 20px ;
+    margin-top: 30px;
+    color: #e8e8e8;
+}
+
+.fskill{
+        /* border: solid; */
+        width: 340px;
+        height: 300px;
+        border-radius: 20px;
+        background-color: #7000FF;
+        position: relative;
+        left: 600px;
+        top: 100px;
+        display: none;
+}
+
+.dskill{
+    /* border: solid; */
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #7000FF;
+    position: relative;
+    left: 190px;
+    top: 430px;
+    display: none;
+}
+.animesection:hover{
+    .pskill{
+        display:block;
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+    .fskill{
+        display:block;
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 0.3s;
+}
+    .dskill{
+        display:block;
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 0.5s;
+    }
+    .moreinfo {
+        display: block;
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 1.2s;
+}
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.moreinfo{
+    border: solid;
+    width: 1010px;
+    height: 450px;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background-color: #111111;
+    display: none;
+}
+
+.pskill , .dskill, .fskill{
+    background-image: linear-gradient(to bottom,#7000FF 50%, #111111 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.pskill:hover , .dskill:hover, .fskill:hover{
+    background-position: bottom;
+}
+
+.moreinfo{
+    background-image: linear-gradient(to top,#111111 50%, #7000FF 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.moreinfo:hover{
+    background-position: top;
+}
+
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  } 
